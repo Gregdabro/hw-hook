@@ -6,7 +6,7 @@ import CollapseWrapper from "../components/common/collapse";
 import Divider from "../components/common/divider";
 import Subtitle from "../components/common/typografy/subtitle";
 import ReactChildrenExample from "../components/examples/children/reactChildrenExample";
-import ChildrenExercise from "../components/exercises/childrenExercise";
+import ChildrenExercise from "../components/exercises/childrenExercise/childrenExercise";
 const ReactChildren = () => {
     return (
         <>
