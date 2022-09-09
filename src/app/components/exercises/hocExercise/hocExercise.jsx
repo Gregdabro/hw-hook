@@ -1,5 +1,11 @@
 import React from "react";
-import CollapseWrapper from "../common/collapse";
+import CollapseWrapper from "../../common/collapse";
+import Divider from "../../common/divider";
+import SmallTitle from "../../common/typografy/smallTitle";
+import withFunctions from "./withFunctions";
+import SimpleComponent from "./SimpleComponent";
+
+const ComponentWithAuth = withFunctions(SimpleComponent);
 
 const HocExercise = () => {
     return (
@@ -76,6 +82,9 @@ const HocExercise = () => {
                 <code>SimpleComponent</code> обновится после перезагрузки
                 страницы
             </p>
+            <Divider/>
+            <SmallTitle>HOC withFunctions</SmallTitle>
+            <ComponentWithAuth/>
         </CollapseWrapper>
     );
 };

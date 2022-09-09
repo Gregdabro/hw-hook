@@ -1,5 +1,9 @@
 import React from "react";
-import CollapseWrapper from "../common/collapse";
+import CollapseWrapper from "../../common/collapse";
+import Component from "./component";
+import ListComponent from "./listComponent";
+import Divider from "../../common/divider";
+import SmallTitle from "../../common/typografy/smallTitle";
 const ChildrenExercise = () => {
     return (
         <CollapseWrapper title="Упражнение">
@@ -10,16 +14,15 @@ const ChildrenExercise = () => {
                 <code>React.Children.map</code> так и{" "}
                 <code>React.Children.toArray</code>
             </p>
-
-            <Component />
-            <Component />
-            <Component />
+            <Divider/>
+            <SmallTitle>Решение React.children.map</SmallTitle>
+            <ListComponent>
+                <Component />
+                <Component />
+                <Component />
+            </ListComponent>
         </CollapseWrapper>
     );
-};
-
-const Component = () => {
-    return <div>Компонент списка</div>;
 };
 
 export default ChildrenExercise;

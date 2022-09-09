@@ -20,6 +20,7 @@ const CollapseWrapper = ({ children, title, name }) => {
                 <div className="d-flex justify-content-between">
                     {title}
                     <i
+                        type="button"
                         className={
                             "bi bi-caret-" +
                             (!display ? "down-fill" : "up-fill")
